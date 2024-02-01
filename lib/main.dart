@@ -18,12 +18,18 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
   late Tween<double> animation;
   @override
   void initState() {
+
     print(' ');
+
     animationController = AnimationController(
         vsync: this, duration: const Duration(milliseconds: 250))
       ..addStatusListener((status) {
         if (status == AnimationStatus.completed) {
           animationController.reverse();
+
+
+          print(' ');
+
         } else if (status == AnimationStatus.dismissed) {
           animationController.forward();
         }
