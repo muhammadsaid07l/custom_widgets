@@ -25,6 +25,7 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
           animationController.reverse();
 
           print(' ');
+          // xsjkbxjsxbsjkxbsj
         } else if (status == AnimationStatus.dismissed) {
           animationController.forward();
         }
